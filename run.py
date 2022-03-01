@@ -81,6 +81,5 @@ def play_game():
 
 
 while input("Do you want to play a game of BlackJack? Type 'y' or 'no': ") == "y":
-  clear()
   play_game()
 
