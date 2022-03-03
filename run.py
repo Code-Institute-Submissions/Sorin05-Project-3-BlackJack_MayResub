@@ -1,19 +1,6 @@
 import random
 from art import logo
-
-
-"""
-.------.            _     _            _    _            _    
-|A_  _ |.          | |   | |          | |  (_)          | |   
-|( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
-| \  /|K /\  |     | '_ \| |/ _` |/ __| |/ / |/ _` |/ __| |/ /
-|  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   < 
-`-----| \  / |     |_.__/|_|\__,_|\___|_|\_\ |\__,_|\___|_|\_\\
-      |  \/ K|                            _/ |                
-      `------'                           |__/           
-"""
-
-
+import os
 
 
 
@@ -26,13 +13,14 @@ def deal_card():
 
 
 def calculate_score(cards):
-     if sum(cards) == 21 and len(cards) == 2:
+    if sum(cards) == 21 and len(cards) == 2:
       return 0
 
      if 11 in cards and sum(cards) > 21:
        cards.remove(11)
        cards.append(1)
-       return sum(cards)     
+     return sum(cards) 
+       
 
 
 
@@ -95,5 +83,7 @@ def play_game():
 
 
 while input("Do you want to play a game of BlackJack? Type 'y' or 'no': ") == "y":
+  os.system('cls' if os.name == 'nt' else 'clear')  
   play_game()
+  
 
