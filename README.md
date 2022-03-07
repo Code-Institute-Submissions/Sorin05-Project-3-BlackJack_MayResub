@@ -9,7 +9,7 @@
     - [Features](#features)
     - [Structure](#structure)
     - [Skeleton](#skeleton)
-      - [Lucid Charts](#lucid-charts)
+      - [app.diagrams.net](#diagrams)
       - [Technology Used](#technology-used)
   - [Testing](#testing)
     - [Functionality Testing](#functionality-testing)
@@ -35,5 +35,12 @@ The house advantage of this game is derived from several rules that favour the d
 
 #### Main Goal
 - Create a card game with basic Python knowledge
-- Create and provide the user with a simple blackjack game without betting and losing any real money in real life 
+- Create and provide the user with a simple blackjack experience without gambling and losing any real money in real life 
 
+### User Needs
+  #### Scope
+  - user to understand the rules and how to play the game
+  - when you lose or win  to have the option to play again
+
+ ### Structure 
+   After the blackjack logo player is asked if they want to play a game of blackjack, if the player chose yes the computer deals 2 cards each , 2 for the house and 2 for the player calculating and showing the sum of the cards to determine if the player wants more cards and to calculate the winner. When the outcome of the game is determined the player is asked if they want to play again or not.
