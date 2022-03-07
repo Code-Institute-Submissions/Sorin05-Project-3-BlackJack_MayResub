@@ -32,22 +32,22 @@ def compare(user_score, computer_score):
     ''' Compares the score and determines a winner or a draw'''
 
     if user_score > 21 and computer_score > 21:
-        return "You lose 😤"
+        return "You lose"
 
     if user_score == computer_score:
-        return "Draw 🙃"
+        return "Draw "
     elif computer_score == 0:
-        return "You lose, House has BlackJack 😱"
+        return "You lose, House has BlackJack"
     elif user_score == 0:
-        return "You have BlackJack, YOU WIN 😎"
+        return "You have BlackJack, YOU WIN"
     elif user_score > 21:
-        return "You went over. YOU LOSE 😭"
+        return "You went over. YOU LOSE"
     elif computer_score > 21:
-        return "House went over. YOU WIN 😁"
+        return "House went over. YOU WIN"
     elif user_score > computer_score:
-        return "YOU WIN 😃"
+        return "YOU WIN "
     else:
-        return "YOU LOSE 😤"
+        return "YOU LOSE "
 
 
 def play_game():
@@ -92,8 +92,6 @@ def play_game():
     print(compare(user_score, computer_score))
 
 
-while input(
-    "Do you want to play a game of BlackJack? Type 'y' or 'no': "
-) == "y":
-    os.system('cls' if os.name == 'nt' else 'clear')
-    play_game()
+while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
+  os.system('cls' if os.name == 'nt' else 'clear')
+  play_game()

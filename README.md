@@ -1,31 +1,39 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# # Table of Contents
 
-Welcome Sorin05,
+  - [Introduction](#Introduction)
+  - [UX](#ux)
+    - [Strategy](#strategy)
+      - [Main Goal](#main-goal)
+    - [User Needs](#user-needs)
+      - [Scope](#scope)
+    - [Features](#features)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
+      - [Lucid Charts](#lucid-charts)
+      - [Technology Used](#technology-used)
+  - [Testing](#testing)
+    - [Functionality Testing](#functionality-testing)
+    - [User needs testing](#testing-user-needs)
+  - [Bugs found on PEP8](#bugs-found-on-PEP8)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+      - [Media](#media)
+      - [Code](#code)
+  # BlackJack
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Introduction
+The North American game of Blackjack, also known as 21, has been one of the most popular casino games of the last hundred years and has spread throughout the world. In the 21st century it has been overtaken in popularity by Slots (slot machine games), but it remains one of the most popular casino card games and is available in almost all casinos both on and offline.
 
-## Reminders
+Blackjack is a casino banked game, meaning that players compete against the house rather than each other. The objective is to get a hand total of closer to 21 than the dealer without going over 21 (busting).
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+At the start of a Blackjack game, the players and the dealer receive two cards each. The players' cards are normally dealt face up, while the dealer has one face down (called the hole card) and one face up. The best possible Blackjack hand is an opening deal of an ace with any ten-point card.
 
-## Creating the Heroku app
+The house advantage of this game is derived from several rules that favour the dealer. The most significant of these is that the player must act before the dealer, allowing the player to bust and lose their bet before the dealer plays.
+# UX
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+  ### Strategy
 
-1. `heroku/python`
-2. `heroku/nodejs`
+#### Main Goal
+- Create a card game with basic Python knowledge
+- Create and provide the user with a simple blackjack game without betting and losing any real money in real life 
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
