@@ -2,7 +2,9 @@
 
 import random
 import os
+from time import sleep
 from art import LOGO
+from rules import RULES
 
 
 def deal_card():
@@ -41,7 +43,7 @@ def compare(user_score, computer_score):
     elif user_score == 0:
         return "You have BlackJack, YOU WIN 😎"
     elif user_score > 21:
-        return "You went over. YOU LOSE 😭"
+        return "You went over. BUST 😭"
     elif computer_score > 21:
         return "House went over. YOU WIN 😁"
     elif user_score > computer_score:
@@ -54,6 +56,9 @@ def play_game():
     ''' It Plays the game'''
 
     print(LOGO)
+    sleep(2.5)
+    print(RULES)
+    sleep(3)
 
     user_cards = []
     computer_cards = []
@@ -66,6 +71,7 @@ def play_game():
     while not is_game_over:
         user_score = calculate_score(user_cards)
         computer_score = calculate_score(computer_cards)
+        sleep(2)
         print(f" Your Cards: {user_cards}, current score: {user_score}")
         print(f" Computer's first card: {computer_cards[0]}")
 
@@ -75,6 +81,7 @@ def play_game():
             user_should_deal = input(
                 "Type 'y' to get another card, type 'n' to pass: "
             )
+            sleep(2)
             if user_should_deal == "y":
                 user_cards.append(deal_card())
             else:
@@ -93,7 +100,8 @@ def play_game():
 
 
 while input(
-    "Do you want to play a game of BlackJack? Type 'y' or 'no':"
+    "Do you want to play a game of BlackJack? Type 'y' or 'n':"
 ) == "y":
+    sleep(2)
     os.system('cls' if os.name == 'nt' else 'clear')
     play_game()
