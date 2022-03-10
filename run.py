@@ -42,7 +42,7 @@ def compare(user_score, computer_score):
     elif user_score > 21:
         return "You went over. BUST 😭"
     elif computer_score > 21:
-        return "House went over. YOU WIN 😁"
+        return "House went BUST. YOU WIN 😁"
     elif user_score > computer_score:
         return "YOU WIN 😃"
     else:
@@ -76,7 +76,7 @@ def play_game():
             is_game_over = True
         else:
             user_should_deal = input(
-                "Type 'y' to get another card, type 'n' to pass: "
+                "Type 'y' to HIT, type 'n' to STAND: "
             )
             sleep(2)
             if user_should_deal == "y":
