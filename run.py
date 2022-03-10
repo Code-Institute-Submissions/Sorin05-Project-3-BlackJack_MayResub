@@ -9,16 +9,13 @@ from rules import RULES
 
 def deal_card():
     ''' Returns a  random card from the deck.'''
-
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     card = random.choice(cards)
-
     return card
 
 
 def calculate_score(cards):
     '''Take a list of cards and return the score calculated from the cards'''
-
     print(cards)
 
     if sum(cards) == 21 and len(cards) == 2:
@@ -87,16 +84,16 @@ def play_game():
             else:
                 is_game_over = True
 
-        while computer_score != 0 and computer_score < 17:
-            computer_cards.append(deal_card())
-            computer_score = calculate_score(computer_cards)
+    while computer_score != 0 and computer_score < 17:
+        computer_cards.append(deal_card())
+        computer_score = calculate_score(computer_cards)
 
-        print(f"  Your final hand: {user_cards}, final score: {user_score}")
-        print(
-            f"  Computer's final hand: {computer_cards}, "
-            "final score: {computer_score}"
-        )
-        print(compare(user_score, computer_score))
+    print(f"  Your final hand: {user_cards}, final score: {user_score}")
+    print(
+        f"""  Computer's final hand: {computer_cards},
+        final score: {computer_score}"""
+    )
+    print(compare(user_score, computer_score))
 
 
 while input(
