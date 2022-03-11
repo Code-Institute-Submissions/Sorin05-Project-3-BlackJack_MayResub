@@ -53,11 +53,13 @@ The house advantage of this game is derived from several rules that favour the d
  # Testing user needs 
    - beginning of the game the player can read the instructions 
 
+  # Testing the code with PEP8 online
+
 
  ### Design and Logic Flow Chart
   
 - for the flow chart I used [app.diagrams.net] (app.diagrams.net)
-![](assets/capture.PNG)
+  ![](Capture.PNG)
 
 
 
@@ -109,4 +111,4 @@ Steps :
 
  - Python community on the discord app , where I got help with the logic of the game
 
- - Stack Overflow for logic and understanding pythhon concepts better   
+ - Stack Overflow for logic and understanding python concepts better  
