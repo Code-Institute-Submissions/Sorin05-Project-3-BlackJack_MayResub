@@ -19,7 +19,10 @@
   - [Credits](#credits)
       - [Media](#media)
       - [Code](#code)
+  
   # BlackJack
+
+
 
 ## Introduction
 The North American game of Blackjack, also known as 21, has been one of the most popular casino games of the last hundred years and has spread throughout the world. In the 21st century it has been overtaken in popularity by Slots (slot machine games), but it remains one of the most popular casino card games and is available in almost all casinos both on and offline.
@@ -49,6 +52,13 @@ The house advantage of this game is derived from several rules that favour the d
 
  # Testing user needs 
    - beginning of the game the player can read the instructions 
+
+
+ ### Design and Logic Flow Chart
+  
+- for the flow chart I used [app.diagrams.net] (app.diagrams.net)
+![](assets/capture.PNG)
+
 
 
 
