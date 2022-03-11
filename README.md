@@ -29,18 +29,74 @@ Blackjack is a casino banked game, meaning that players compete against the hous
 At the start of a Blackjack game, the players and the dealer receive two cards each. The players' cards are normally dealt face up, while the dealer has one face down (called the hole card) and one face up. The best possible Blackjack hand is an opening deal of an ace with any ten-point card.
 
 The house advantage of this game is derived from several rules that favour the dealer. The most significant of these is that the player must act before the dealer, allowing the player to bust and lose their bet before the dealer plays.
+
 # UX
 
-  ### Strategy
-
 #### Main Goal
-- Create a card game with basic Python knowledge
-- Create and provide the user with a simple blackjack experience without gambling and losing any real money in real life 
+- Create a card game with basic Python concepts that I as a developer understand
+- Create and provide the user with a simple blackjack experience without gambling and losing any real money in real life
 
 ### User Needs
   #### Scope
   - user to understand the rules and how to play the game
   - when you lose or win  to have the option to play again
 
- ### Structure 
-   After the blackjack logo player is asked if they want to play a game of blackjack, if the player chose yes the computer deals 2 cards each , 2 for the house and 2 for the player calculating and showing the sum of the cards to determine if the player wants more cards and to calculate the winner. When the outcome of the game is determined the player is asked if they want to play again or not.
+ ### Testing the game
+
+ # Functionality testing
+   - the game  has been tested in gitpod terminal replit and Heroku terminal
+   - tested with all the options available "HIT" , "STAND" features for a simple blackjack experience
+
+ # Testing user needs 
+   - beginning of the game the player can read the instructions 
+
+
+
+### Bugs found on PEP8
+
+- trailing  white spaces ;fixed by removing extra space
+- indenation errors  which broke my while loops few times
+- line to long errors 
+
+
+### Deployment
+Steps :
+- make an account with Heroku
+- fork or clone this repository
+- ensure that the Procfile is in place
+- create a new app in Heroku
+- select "New" and "Create new app"
+- add name for the app and press "Create new app"
+- in "Settings" select "BuildPack" and select Python and Node.js
+- in "Settings" click "Reveal Config Vars" and input the fallowing key : PORT,VALUE:8000.
+- press on "Deploy" and select your method and repository
+- press "Connect" on selected Github repository
+- choose beween "Enable Automatic Deploys" or Deploy Branch" in the manual deploy section
+- Heroku will now deploy it to the site
+
+### Future updates and features
+
+ - On the future I would like to add a "High Score" feature , where players can see and store their high scores against the computer.
+
+ - I would like add real casino mechanics and player strategies like "Split", If you hold two cards that are the same number in your hand, like two eights or two sixes, you can split them apart and play each one like two separate hands instead of one. Once you split your two cards into two hands, you’ll place your original bet with one hand and place an equal bet on the second, split hand.
+ You will play the hand to your right first. The dealer will give you a card when you ask for a “hit.” You will continue to hit until you are satisfied or you bust.
+ Then, you move to play the other hand and have the dealer hit you with cards until you say “stop” or you go over 21. If you go over 21, you lose your bet on that hand.
+ If you have a pair of aces and split them, the dealer will give you only one additional card per hand. You cannot draw again. If you draw a 10 on the second card, you have 21. Your winning hand pays 1:1, not 3:2 like other winning blackjack hands.
+
+ - "Double Down" mechanic where on your original two cards, you can double your bet before the  dealer gives you another card. You place another bet equal to the first. Then, the dealer will give you only one card The dealer settles all bets at the end of the hand.
+  If you have sevens, you can split a pair, as above, and double down if you want to.
+
+  - And I would like to add real cards pictures and casino theme with css and html
+
+### Credits, you can check out my inspiration here 
+[Washington Post] (https://games.washingtonpost.com/games/blackjack/)
+
+### Code
+
+ - Love Sandwhices project @ Code institute for a laying a general code knowledge on the
+  foundation
+ - Huge help from the Slack community on helping me out with gitpod indentation
+
+ - Python community on the discord app , where I got help with the logic of the game
+
+ - Stack Overflow for logic and understanding pythhon concepts better   
