@@ -39,13 +39,13 @@ The house advantage of this game is derived from several rules that favour the d
 # UX
 
 #### Main Goal
-- Create a card game with basic Python concepts that I as a developer understand
+- Create a card game with basic Python concepts that I as a junior developer understand
 - Create and provide the user with a simple blackjack experience without gambling and losing any real money in real life
 
 ### User Needs
 
   #### Scope
-  - user to understand the rules and how to play the game
+  - user can read the rules on the terminal and how to play the game.
   - when you lose or win  to have the option to play again
 
  ### Testing the game
@@ -63,7 +63,7 @@ The house advantage of this game is derived from several rules that favour the d
 
  ### Design and Logic Flow Chart
   
-- for the flow chart I used [app.diagrams.net] (app.diagrams.net)
+- for the flow chart I used [app.diagrams.net] (https://app.diagrams.net)
 
 
 ![](/images/Capture.PNG)
@@ -75,6 +75,7 @@ The house advantage of this game is derived from several rules that favour the d
 - GitHub
 - GitPod
 - app.diagrams.net
+- ASCII art 
 
 
 ### Bugs
@@ -108,12 +109,14 @@ The house advantage of this game is derived from several rules that favour the d
  Then, you move to play the other hand and have the dealer hit you with cards until you say “stop” or you go over 21. If you go over 21, you lose your bet on that hand.
  If you have a pair of aces and split them, the dealer will give you only one additional card per hand. You cannot draw again. If you draw a 10 on the second card, you have 21. Your winning hand pays 1:1, not 3:2 like other winning blackjack hands.
 
- - "Double Down" mechanic where on your original two cards, you can double your bet before the  dealer gives you another card. You place another bet equal to the first. Then, the dealer will give you only one card The dealer settles all bets at the end of the hand.
+ - "Double Down" mechanic where on your original two cards, you can double your bet before the  dealer gives you another card. You place another bet equal to the first. Then, the dealer will give you only one card The dealer settles all bets at the end of the  hand.
   If you have sevens, you can split a pair, as above, and double down if you want to.
-
-  - And I would like to add real cards pictures and casino theme with css and html
+ - I would like to add casino chips and a betting system  
+ - I would like to add real cards pictures and casino theme with css and html 
+ - I would like to add casino sounds 
 
 ### Credits, you can check out my inspiration here 
+
 [Washington Post] (https://games.washingtonpost.com/games/blackjack/)
 
 ### Code and Credits
