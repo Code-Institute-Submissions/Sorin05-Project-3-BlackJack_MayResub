@@ -14,8 +14,8 @@
     - [Testing user needs](#testing-user-needs)
   - [Bugs](#bugs)
   - [Deployment](#Deployment)
-  - [Code and Credits](#Code-and-Credits)
   - [Future updates and features](#Future-updates-and-features)
+  - [Code and Credits](#Code-and-Credits)
 
 
   # BlackJack 
@@ -51,11 +51,11 @@ The house advantage of this game is derived from several rules that favour the d
  ### Testing the game
 
  # Functionality testing
-   - the game  has been tested in gitpod terminal replit and Heroku terminal
+   - the game  has been tested in gitpod terminal Replit and Heroku terminal
    - tested with all the options available "HIT" , "STAND" features for a simple blackjack experience
 
  # Testing user needs 
-   - beginning of the game the player can read the instructions 
+   - The start of the game the user can read the rules and is asked if it wants to play blackjack 
 
   # Testing the code with PEP8 online
   ![](/images/pep%208.PNG)
@@ -86,10 +86,10 @@ The house advantage of this game is derived from several rules that favour the d
 
 
 ### Deployment
- # Steps :
-- make an account with Heroku
+
+- create an account with Heroku
 - fork or clone this repository
-- ensure that the Procfile is in place
+- ensure that the Profile is in place
 - create a new app in Heroku
 - select "New" and "Create new app"
 - add name for the app and press "Create new app"
@@ -103,28 +103,22 @@ The house advantage of this game is derived from several rules that favour the d
 ### Future updates and features
 
  - On the future I would like to add a "High Score" feature , where players can see and store their high scores against the computer.
-
- - I would like add real casino mechanics and player strategies like "Split", If you hold two cards that are the same number in your hand, like two eights or two sixes, you can split them apart and play each one like two separate hands instead of one. Once you split your two cards into two hands, you’ll place your original bet with one hand and place an equal bet on the second, split hand.
- You will play the hand to your right first. The dealer will give you a card when you ask for a “hit.” You will continue to hit until you are satisfied or you bust.
- Then, you move to play the other hand and have the dealer hit you with cards until you say “stop” or you go over 21. If you go over 21, you lose your bet on that hand.
+ - I would like add real casino mechanics and player strategies like "Split", If you hold two cards that are the same number in your hand, like two eights or two sixes, you can split them apart and play each one like two separate hands instead of one. Once    you split your two cards into two hands, you’ll place your original bet with one hand and place an equal bet on the second, split hand.
+  You will play the hand to your right first. The dealer will give you a card when you ask for a “hit.” You will continue to hit until you are satisfied or you bust.
+  Then, you move to play the other hand and have the dealer hit you with cards until you say “stop” or you go over 21. If you go over 21, you lose your bet on that hand.
  If you have a pair of aces and split them, the dealer will give you only one additional card per hand. You cannot draw again. If you draw a 10 on the second card, you have 21. Your winning hand pays 1:1, not 3:2 like other winning blackjack hands.
-
  - "Double Down" mechanic where on your original two cards, you can double your bet before the  dealer gives you another card. You place another bet equal to the first. Then, the dealer will give you only one card The dealer settles all bets at the end of the  hand.
   If you have sevens, you can split a pair, as above, and double down if you want to.
  - I would like to add casino chips and a betting system  
  - I would like to add real cards pictures and casino theme with css and html 
  - I would like to add casino sounds 
 
-### Credits, you can check out my inspiration here 
-
-[Washington Post] (https://games.washingtonpost.com/games/blackjack/)
 
 ### Code and Credits
 
+ - Project inspiration [Washington Post] (https://games.washingtonpost.com/games/blackjack/)
  - Love Sandwhices project @ Code institute for a laying a general code knowledge on the foundation
  - Huge help from the Slack community on helping me out with gitpod indentation
-
  - Python community on the discord app , where I got help with the logic of the game
-
  - Stack Overflow for logic and understanding python concepts better  
  - My Mentor Dario for the great support and help
