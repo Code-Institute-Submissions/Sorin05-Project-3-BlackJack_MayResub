@@ -96,9 +96,35 @@ def play_game():
     print(compare(user_score, computer_score))
 
 
-while input(
-    "Do you want to play a game of BlackJack? Type 'y' or 'n':"
-) == "y":
-    sleep(2)
-    os.system('cls' if os.name == 'nt' else 'clear')
-    play_game()
+def validate_input(user_input):
+    ''' It validates wrong user input'''
+    if user_input == "y":
+        return True
+    elif user_input == "n":
+        return True
+    elif user_input == "Y":
+        return True
+    elif user_input == "N":
+        return True
+    else:
+        print("Invalid option")
+        sleep(3)
+        return False
+
+
+def main():
+    ''' main function'''
+    user_answer = True
+    while user_answer:
+        response = input(
+            "Do you want to play a game of BlackJack? Type 'y' or 'n':") == "y"
+        if response == 'n' or response == 'N':
+            user_answer = False
+        sleep(2)
+        result = validate_input(response)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        if result:
+            play_game()
+
+
+main()
