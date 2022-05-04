@@ -16,7 +16,7 @@ def deal_card():
 
 def calculate_score(cards):
     '''Take a list of cards and return the score calculated from the cards'''
-    print(cards)
+    print("line19", cards)
 
     if sum(cards) == 21 and len(cards) == 2:
         return 0
@@ -81,12 +81,14 @@ def play_game():
             sleep(2)
             if user_should_deal == "y":
                 user_cards.append(deal_card())
+            elif user_should_deal == "n":
+                while computer_score != 0 and computer_score < 17:
+                    computer_cards.append(deal_card())
+                    computer_score = calculate_score(computer_cards)
+
             else:
                 is_game_over = True
 
-    while computer_score != 0 and computer_score < 17:
-        computer_cards.append(deal_card())
-        computer_score = calculate_score(computer_cards)
 
     print(f"  Your final hand: {user_cards}, final score: {user_score}")
     print(
@@ -96,20 +98,25 @@ def play_game():
     print(compare(user_score, computer_score))
 
 
+YN = ("y", "n")
+
+
 def validate_input(user_input):
     ''' It validates wrong user input'''
-    if user_input == "y":
-        return True
-    elif user_input == "n":
-        return True
-    elif user_input == "Y":
-        return True
-    elif user_input == "N":
-        return True
-    else:
-        print("Invalid option")
-        sleep(3)
+
+    user_response = user_input.lower().strip()
+    while (
+        not user_response.isalpha()
+        or user_response not in YN
+    ):
+        print("Please input 'y' or 'n'")
+        user_response = input().lower().strip()
+        continue
+
+    if user_response == "n":
         return False
+
+    return True
 
 
 def main():
@@ -117,7 +124,7 @@ def main():
     user_answer = True
     while user_answer:
         response = input(
-            "Do you want to play a game of BlackJack? Type 'y' or 'n':") == "y"
+            "Do you want to play a game of BlackJack? Type 'y' or 'n':")
         if response == 'n' or response == 'N':
             user_answer = False
         sleep(2)
