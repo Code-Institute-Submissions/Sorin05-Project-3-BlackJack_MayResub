@@ -123,6 +123,7 @@ def main():
     ''' main function'''
     user_answer = True
     while user_answer:
+        sleep(1.5)
         response = input(
             "Do you want to play a game of BlackJack? Type 'y' or 'n':")
         if response == 'n' or response == 'N':
