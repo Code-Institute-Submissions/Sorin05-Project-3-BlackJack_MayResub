@@ -87,10 +87,10 @@ def play_game():
                 if computer_score >= 17:
                     is_game_over = True
             else:
-                is_game_over = True
+                os.system('cls' if os.name == 'nt' else 'clear')
+                print("Invalid option")
 
-
-    print(f"  Your final hand: {user_cards}, final score: {user_score}")
+    print(f"Your final hand: {user_cards}, final score: {user_score}")
     print(
         f"""  Computer's final hand: {computer_cards},
         final score: {computer_score}"""
@@ -98,16 +98,13 @@ def play_game():
     print(compare(user_score, computer_score))
 
 
-YN = ("y", "n")
-
-
 def validate_input(user_input):
     ''' It validates wrong user input'''
-
+    y_n = ("y", "n")
     user_response = user_input.lower().strip()
     while (
         not user_response.isalpha()
-        or user_response not in YN
+        or user_response not in y_n
     ):
         print("Please input 'y' or 'n'")
         user_response = input().lower().strip()
@@ -126,13 +123,15 @@ def main():
         sleep(1.5)
         response = input(
             "Do you want to play a game of BlackJack? Type 'y' or 'n':")
-        if response == 'n' or response == 'N':
-            user_answer = False
         sleep(2)
         result = validate_input(response)
         os.system('cls' if os.name == 'nt' else 'clear')
         if result:
             play_game()
+        else:
+            print("Goodbye")
+            sleep(1.5)
+            user_answer = False
 
 
 main()
