@@ -16,7 +16,6 @@ def deal_card():
 
 def calculate_score(cards):
     '''Take a list of cards and return the score calculated from the cards'''
-    print("line19", cards)
 
     if sum(cards) == 21 and len(cards) == 2:
         return 0
@@ -85,7 +84,8 @@ def play_game():
                 while computer_score != 0 and computer_score < 17:
                     computer_cards.append(deal_card())
                     computer_score = calculate_score(computer_cards)
-
+                if computer_score >= 17:
+                    is_game_over = True
             else:
                 is_game_over = True
 
