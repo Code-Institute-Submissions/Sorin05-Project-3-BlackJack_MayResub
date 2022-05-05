@@ -68,6 +68,15 @@ The house advantage of this game is derived from several rules that favour the d
 
 ![](/images/Capture.PNG)
 
+### Screenshots of the game
+
+
+-  ![](/images/screenshot1.PNG)
+
+- ![](/images/Screenshot2.PNG)
+
+- ![](/images/screenshot3.PNG)
+
 
 #### Technologies Used
 - Python
@@ -99,6 +108,33 @@ The house advantage of this game is derived from several rules that favour the d
 - press "Connect" on selected Github repository
 - choose beween "Enable Automatic Deploys" or Deploy Branch" in the manual deploy section
 - Heroku will now deploy it to the site
+
+### Deployment after the heroku security breach
+1. Login to heroku and enter your details.
+command: heroku login -i
+
+2. Get your app name from heroku.
+command: heroku apps
+
+3. Set the heroku remote. (Replace <app_name> with your actual app name and remove the <> characters)
+command: heroku git:remote -a <app_name>
+
+4. Add, commit and push to github
+command: git add . && git commit -m "Deploy to Heroku via CLI"
+
+5. Push to both github and heroku
+command: git push origin main
+command: git push heroku main
+
+
+MFA/2FA enabled?
+1. Click on Account Settings (under the avatar menu)
+2. Scroll down to the API Key section and click Reveal. Copy the key.
+3. Enter the command: heroku_config , and enter your api key you copied when prompted
+4. Complete the steps above, if you see an input box at the top middle of the editor...
+ a. enter your heroku username
+ b. enter the api key you just copied
+
 
 ### Future updates and features
 
